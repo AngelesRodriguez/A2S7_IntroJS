@@ -12,8 +12,34 @@ de un segundo, al volver hacer click debe volver a estar en blanco y negro.
   <head>
     <meta charset="utf-8">
     <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   </head>
   <body>
+
+  	<div class="gallery">
+		<img class="thumb" src="assets/img/foto_1.jpg" alt="Gatito1">
+		<img class="thumb" src="assets/img/foto_2.jpg" alt="Gatito2">
+		<img class="thumb" src="assets/img/foto_3.jpg" alt="Gatito3">
+		<img class="thumb" src="assets/img/foto_4.jpg" alt="Gatito4">
+		<img class="thumb" src="assets/img/foto_5.jpg" alt="Gatito5">
+		<img class="thumb" src="assets/img/foto_6.jpg" alt="Gatito6">
+		<img class="thumb" src="assets/img/foto_7.jpg" alt="Gatito7">
+		<img class="thumb" src="assets/img/foto_8.jpg" alt="Gatito8">
+		<img class="thumb" src="assets/img/foto_9.jpg" alt="Gatito1">
+		<img class="thumb" src="assets/img/foto_10.jpg" alt="Gatito1">
+		<img class="thumb" src="assets/img/foto_11.jpg" alt="Gatito1">
+		<img class="thumb" src="assets/img/foto_12.jpg" alt="Gatito1">
+	</div>
+
+	<script>
+		$(function(){
+			$('.thumb').on('click', function(){
+				$(this).toggleClass('color');
+			})
+		});
+
+	</script>
 
   </body>
 </html>
